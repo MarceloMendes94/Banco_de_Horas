@@ -16,4 +16,11 @@ Ao fim deve-se emitir um relatório contendo as horas  e ativiades feitas.
 O gerente do polo tem a permissão de cadastrar novos gerentes.
 
 # Diagrama de classes UML
-![diagrama](./modelos/diagrama_classes.jpg)
+![Diagrama de clases](modelos/diagrama_classes.jpg)
+
+# Casos de Uso
+![bolsista](modelos/casos_de_uso_Bolsista.jpg)
+
+![coordenador](modelos/casos_de_uso_Coordenador.jpg)
+
+![gerente](modelos/casos_de_uso_Gerente.jpg)
