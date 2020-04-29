@@ -14,3 +14,6 @@ As atividades de cada bolsista devem conter uma descrição do que foi realizado
 As atividades devem ser agrupadas de forma quinzenal para o coordenador avaliar, ele deve marcar com um "OK" e validar aquela quinzena.<br>
 Ao fim deve-se emitir um relatório contendo as horas  e ativiades feitas.
 O gerente do polo tem a permissão de cadastrar novos gerentes.
+
+# Diagrama de classes UML
+![diagrama](./modelos/diagrama_classes.jpg)
