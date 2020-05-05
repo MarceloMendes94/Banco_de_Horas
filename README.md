@@ -15,12 +15,15 @@ As atividades devem ser agrupadas de forma quinzenal para o coordenador avaliar,
 Ao fim deve-se emitir um relatório contendo as horas  e ativiades feitas.
 O gerente do polo tem a permissão de cadastrar novos gerentes.
 
-# Diagrama de classes UML
+# Diagrama de classes UML.
 ![Diagrama de clases](modelos/diagrama_classes.jpg)
 
-# Casos de Uso
+# Casos de Uso.
 ![bolsista](modelos/casos_de_uso_Bolsista.jpg)
 
 ![coordenador](modelos/casos_de_uso_Coordenador.jpg)
 
 ![gerente](modelos/casos_de_uso_Gerente.jpg)
+
+# Modelagem do banco de dados do projeto.
+## Modelo conceitual.

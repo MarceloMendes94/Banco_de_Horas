@@ -1,0 +1,5 @@
+#Config
+#Tue May 05 18:20:34 BRT 2020
+cfg.location.y=25
+cfg.location.x=51
+cfg.recentes=/opt/lampp/htdocs/IC/Banco_de_Horas/modelos/Modelo_Banco.brM3
