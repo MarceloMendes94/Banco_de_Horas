@@ -16,10 +16,9 @@ Faz-se necessário um controle de projetos e usuários pelo Polo de inovação, 
 ## Modelagem
 
 ### 2.1 Modelo UML  
-```
-```
+![UML](/modelos/uml.jpeg)  
 ### 2.2 Modelo lógico do banco de dados  
-![Banco de horas](/modelos/Banco_Horas.png)
+![Banco de horas](/modelos/Banco_Horas.png)  
 ### 2.3 Modelo Físico   
 ```
 /* Banco_Horas: */
@@ -92,3 +91,27 @@ CREATE TABLE polo_inovacao (
 ### 2.3 Diagrama de casos de uso  
 ```
 ```  
+## Desenvolvimento
+O desenvolvimento será guiado por história de usuário para medida de progresso.
+
+### 3.1 Estrutura
+- [ ] Tarefa 1
+- [x] Tarefa 2
+- [x] Tarefa 3
+- [x] Tarefa 4
+- [ ] Tarefa 5
+- [ ] Tarefa 6
+- [ ] Tarefa 7
+- [ ] Tarefa 8
+- [ ] Tarefa 9  
+
+### 3.2 Apresentação
+- [ ] Tarefa 1
+- [x] Tarefa 2
+- [x] Tarefa 3
+- [x] Tarefa 4
+- [ ] Tarefa 5
+- [ ] Tarefa 6
+- [ ] Tarefa 7
+- [ ] Tarefa 8
+- [ ] Tarefa 9
