@@ -19,8 +19,7 @@ Faz-se necessário um controle de projetos e usuários pelo Polo de inovação, 
 ```
 ```
 ### 2.2 Modelo lógico do banco de dados  
-```
-```
+![Banco de horas](/modelos/Banco_Horas.png)
 ### 2.3 Modelo Físico   
 ```
 ```
