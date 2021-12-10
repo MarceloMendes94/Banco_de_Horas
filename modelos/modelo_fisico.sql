@@ -2,8 +2,8 @@
 
 CREATE TABLE projetos (
     pk INTEGER PRIMARY KEY,
-    titulo VARCHAR,
-    descricao VARCHAR,
+    titulo VARCHAR(100),
+    descricao VARCHAR(255),
     fk_coordenador INTEGER,
     status BOOLEAN,
     inicio DATE,
@@ -12,7 +12,7 @@ CREATE TABLE projetos (
 
 CREATE TABLE atividade (
     pk INTEGER PRIMARY KEY,
-    descricao VARCHAR,
+    descricao VARCHAR(255),
     inicio TIMESTAMP,
     fim TIMESTAMP,
     fk_bolsista INTEGER,
@@ -21,11 +21,11 @@ CREATE TABLE atividade (
 
 CREATE TABLE usuario (
     pk INTEGER PRIMARY KEY,
-    nome VARCHAR,
-    sobrenome VARCHAR,
-    email VARCHAR,
-    matricula VARCHAR,
-    senha VARCHAR
+    nome VARCHAR(30),
+    sobrenome VARCHAR(50),
+    email VARCHAR(75),
+    matricula VARCHAR(50),
+    senha VARCHAR(255)
 );
 
 CREATE TABLE bolsista (
@@ -49,7 +49,7 @@ CREATE TABLE avaliacao (
     fk_coordenador INTEGER,
     fk_bolsista INTEGER,
     fk_projeto INTEGER,
-    mensagem VARCHAR,
+    mensagem VARCHAR(255),
     status BOOLEAN
 );
 

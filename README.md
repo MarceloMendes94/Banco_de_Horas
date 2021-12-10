@@ -22,7 +22,73 @@ Faz-se necessário um controle de projetos e usuários pelo Polo de inovação, 
 ![Banco de horas](/modelos/Banco_Horas.png)
 ### 2.3 Modelo Físico   
 ```
+/* Banco_Horas: */
+
+CREATE TABLE projetos (
+    pk INTEGER PRIMARY KEY,
+    titulo VARCHAR(100),
+    descricao VARCHAR(255),
+    fk_coordenador INTEGER,
+    status BOOLEAN,
+    inicio DATE,
+    fim DATE
+);
+
+CREATE TABLE atividade (
+    pk INTEGER PRIMARY KEY,
+    descricao VARCHAR(255),
+    inicio TIMESTAMP,
+    fim TIMESTAMP,
+    fk_bolsista INTEGER,
+    fk_projeto INTEGER
+);
+
+CREATE TABLE usuario (
+    pk INTEGER PRIMARY KEY,
+    nome VARCHAR(30),
+    sobrenome VARCHAR(50),
+    email VARCHAR(75),
+    matricula VARCHAR(50),
+    senha VARCHAR(255)
+);
+
+CREATE TABLE bolsista (
+    pk INTEGER PRIMARY KEY,
+    fk_usuario INTEGER
+);
+
+CREATE TABLE coordenador (
+    pk INTEGER PRIMARY KEY,
+    fk_usuario INTEGER
+);
+
+CREATE TABLE bolsista_projeto (
+    pk INTEGER PRIMARY KEY,
+    fk_bolsista INTEGER,
+    fk_projeto INTEGER
+);
+
+CREATE TABLE avaliacao (
+    pk INTEGER PRIMARY KEY,
+    fk_coordenador INTEGER,
+    fk_bolsista INTEGER,
+    fk_projeto INTEGER,
+    mensagem VARCHAR(255),
+    status BOOLEAN
+);
+
+CREATE TABLE atividade_avaliacao (
+    pk INTEGER PRIMARY KEY,
+    fk_atividade INTEGER,
+    fk_avaliacao INTEGER
+);
+
+CREATE TABLE polo_inovacao (
+    pk INTEGER PRIMARY KEY,
+    fk_usuario INTEGER
+);
 ```
+[Código completo aqui](/modelos/modelo_fisico.sql)  
 ### 2.3 Diagrama de casos de uso  
 ```
 ```  
