@@ -11,7 +11,7 @@ Marcelo Passamai Mendes
 
 ## Descrição  
 O sistema do banco de horas deve ser utilizado por bolsistas e coordenadores de projetos de iniciação científica do Polo de Inovação, cada projeto deve ter um coordenador responsável, sendo que cada coordenador pode ter projetos até completar o total de horas disponivels por semestre.  
-Cada Usuário pode autenticar-se no sistema, seja por email ou matricula e uma senha escolhida pelo próprio usuário.  
+Cada Usuário pode autenticar-se no sistema, seja por email e uma senha escolhida pelo próprio usuário.  
 Os bolsistas podem: logar-se, inserir atividades, atualizar atividades e verificar avaliação do coordenador.
 Uma atividade precisa ter um tempo de duração ou seja (inicio e fim), sendo que o sistema deve impedir o bolsista lançar atividades em datas futuras. As atividades devem conter uma descrição textual inseirdas pelo bolsista com o que foi feito.  
 As atividades vão aparecer agrupadas em até 5 em 5 de cada bolsista para o coordenador avaliar,o coordenador deve ver as atividades dos bolsistas e avaliar como POSITIVO ou NEGATIVO.  
@@ -36,5 +36,23 @@ Faz-se necessário um controle de projetos e usuários pelo Polo de inovação, 
 
 ### 2.3 Diagrama de casos de uso  
 
-## Desenvolvimento
+## Requisistos
 O desenvolvimento será guiado por história de usuário para medida de progresso.
+### Funcionais
+|indice|Descição|
+|-|-|
+|001|Usuários: Bolsistas, Coordenadores e Administradores, para acessar o sistema devem se autenticar.|
+|002|Projetos devem ser cadastrados apenas por usuários Administrador, um projeto deve conter: Título, Coordenador e no mínimo 2 Bolsistas podendo ter mais.|
+|003|Administradores podem cadastrar usuários na plataforma: Bolsistas, Coordenadores e administradores|
+|004|Bolsistas, podem cadastrar atividades na plataforma, as atividades devem conter Título, Descrição, Início e Fim|
+|005|Coordenadores devem ser capazes de avaliar as atividades realizadas por seus bolsistas como positivo negativo|
+ 
+
+## Não funcionais
+|Indice|Descrição|
+|-|-|
+|000||
+|000||
+
+
+<hr>

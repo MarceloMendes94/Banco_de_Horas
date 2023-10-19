@@ -1,4 +1,4 @@
 # Diário de bordo
 |Descrição|Atividade|
 |-|-|
-|Atualização do projeto|19-10-2023|
+|Atualização do projeto, aleḿ disso foram escritas alguns requisitos funcionais,|19-10-2023|
