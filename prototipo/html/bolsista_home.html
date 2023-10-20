@@ -95,17 +95,17 @@
             </li>
 
             <!--marcelo-->
-            <li class="menu-header small text-uppercase">
+            <li class="menu-header small text-uppercase" >
               <span class="menu-header-text">Atividades</span>
             </li>
             <li class="menu-item">
-              <a href="" class="menu-link ">
+              <a class="menu-link" id="menu-atividade">
                 <i class="menu-icon tf-icons bx bx-pencil"></i>
                 <div> Inserir atividade</div>
               </a>
             </li>
             <li class="menu-item">
-              <a href="" class="menu-link ">
+              <a class="menu-link" id="menu-avaliacoes">
                 <i class="menu-icon tf-icons bx bx-search-alt-2"></i>
                 <div> Avaliações de atividade</div>
               </a>
@@ -194,8 +194,14 @@
           <!-- content-->
           <div class="container-xxl flex-grow-1 container-p-y">    
             <div class="row">
+            <!-- Dashboard home --> 
+              <div id="dashboard">
+
+              </div>      
+            <!-- / Dashboard home --> 
+
             <!-- Inserir Atvidade -->
-                <div class="col-md-12"
+                <div class="col-md-12" id="atividade" style="display: none;" 
                 >
                     <div class="card mb-4">
                     <h5 class="card-header">Inserir Atividade</h5>
@@ -238,7 +244,7 @@
             <!-- / Inserir Atvidade -->
 
             <!-- Avaliacoes Atividade --> 
-                <div clas="col-md-12">
+                <div clas="col-md-12" id="avaliacoes" style="display: none;" >
                     <div class="card">
                         <h5 class="card-header">Atividades das semanas de 03-05-2023 até 10-05-2023</h5>
                         <div class="table-responsive text-nowrap">
@@ -330,7 +336,8 @@
                 </div>    
             <!-- / Avaliacoes Atividades -->
 
-            <!-- Corrigir Atividade -->    
+            <!-- Corrigir Atividade --> 
+              <div id="corrigir" style="display: none;"></div>   
             <!-- / Corrigir Atividade -->    
             
             </div>
@@ -353,6 +360,9 @@
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+
+
+
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
@@ -371,5 +381,44 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script>
+
+
+      /* ao carregar a pagina*/
+      $(document).ready(function() {
+        $( "#avaliacoes" ).hide();
+        $( "#corrigir" ).hide();
+        $( "#atividade" ).hide();
+        $( "#dashboard" ).show( 300 );
+      });
+      /*Menu*/
+      $( "#menu-dashboard" ).on( "click", function() {
+        $( "#avaliacoes" ).hide( 600 );
+        $( "#corrigir" ).hide( 600 );
+        $( "#atividade" ).hide( 600 );
+        $( "#dashboard" ).show( 300 );
+      });
+
+      $( "#menu-atividade" ).on( "click", function() {
+          console.log("oi");
+        $( "#dashboard" ).hide( 600 );
+        $( "#avaliacoes" ).hide( 600 );
+        $( "#corrigir" ).hide( 600 );
+        $( "#atividade" ).show( 300 );
+      });
+      
+      $( "#menu-avaliacoes" ).on( "click", function() {
+          console.log("oi");
+        $( "#atividade" ).hide( 600 );
+        $( "#dashboard" ).hide( 600 );
+        $( "#corrigir" ).hide( 600 );
+        $( "#avaliacoes" ).show(300);
+      });
+
+    </script>
+    
+    
+
   </body>
 </html>
