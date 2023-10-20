@@ -100,7 +100,7 @@
             </li>
 
             <li class="menu-item">
-              <a href="" class="menu-link ">
+              <a id="menu-cadastrar-projeto" class="menu-link ">
                 <i class="menu-icon tf-icons bx bx-folder-plus"></i>
                 <div> Cadastrar projeto</div>
               </a>
@@ -124,17 +124,17 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="pages-account-settings-account.html" class="menu-link">
+                  <a id="menu-cadastrar-administrador" class="menu-link">
                     <div data-i18n="Account">Administrador</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="pages-account-settings-notifications.html" class="menu-link">
+                  <a id="menu-cadastrar-coordenador" class="menu-link">
                     <div data-i18n="Notifications">Coordenador</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="pages-account-settings-connections.html" class="menu-link">
+                  <a id="menu-cadastrar-bolsista" class="menu-link">
                     <div data-i18n="Connections">Bolsista</div>
                   </a>
                 </li>
@@ -228,111 +228,232 @@
             <!-- / Dashboard home -->
         
             <!-- Cadastrar Projeto-->
-            <div id="cadastrar-projeto">
+            <div id="cadastrar-projeto" style="display: none;">
               <div class="card mb-4">
-                <h5 class="card-header">HTML5 Inputs</h5>
+                <h5 class="card-header">Cadastrar Projeto</h5>
                 <div class="card-body">
                   <div class="mb-3 row">
-                    <label for="html5-text-input" class="col-md-2 col-form-label">Text</label>
+                    <label for="html5-text-input" class="col-md-2 col-form-label">Título do projeto de pesquisa</label>
                     <div class="col-md-10">
-                      <input class="form-control" type="text" value="Sneat" id="html5-text-input">
+                      <input class="form-control" type="text" value="Ex: Projeto de incidência de raios Lunares sobre a pele" id="html5-text-input">
                     </div>
                   </div>
+                  
                   <div class="mb-3 row">
-                    <label for="html5-search-input" class="col-md-2 col-form-label">Search</label>
+                    <label for="" class="col-md-2 col-form-label">Título do plano de trabalho</label>
                     <div class="col-md-10">
-                      <input class="form-control" type="search" value="Search ..." id="html5-search-input">
+                      <input class="form-control" type="text" value="Ex: Proposta de um Protetor Lunar" id="">
                     </div>
                   </div>
+                  
                   <div class="mb-3 row">
-                    <label for="html5-email-input" class="col-md-2 col-form-label">Email</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="email" value="john@example.com" id="html5-email-input">
-                    </div>
+                    <label for="area_conhecimento" class="form-label">Área de conhecimento</label>
+                    <textarea class="form-control" id="area_conhecimento" rows="2"></textarea>
                   </div>
+                  
                   <div class="mb-3 row">
-                    <label for="html5-url-input" class="col-md-2 col-form-label">URL</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="url" value="https://themeselection.com" id="html5-url-input">
-                    </div>
+                    <label for="referencia_chamada" class="form-label">Referência da chamada</label>
+                    <input class="form-control" list="lista_referencia" id="referencia_chamada" placeholder="Selecione a referência ...">
+                    <datalist id="lista_referencia">
+                      <option value="PIBIC"></option>
+                      <option value="PIVIC"></option>
+                      <option value="PIBITI"></option>
+                      <option value="PROGRUPOS"></option>
+                      <option value="PIBIC - EM"></option>
+                      <option value="Jovens talentos para a Ciência"></option>
+                    </datalist>
                   </div>
+                  
                   <div class="mb-3 row">
-                    <label for="html5-tel-input" class="col-md-2 col-form-label">Phone</label>
+                    <label for="" class="col-md-2 col-form-label">Edital</label>
                     <div class="col-md-10">
-                      <input class="form-control" type="tel" value="90-(164)-188-556" id="html5-tel-input">
+                      <input class="form-control" type="text" value="2023/01" id="">
                     </div>
                   </div>
+
+                  <div class="mb-3">
+                    <label for="agencia_financiadora" class="form-label">Agência Finciadora</label>
+                    <input class="form-control" list="lista_agencias" id="agencia_financiadora" placeholder="Selecione a agência ...">
+                    <datalist id="lista_agencias">
+                      <option value="CNPq"></option>
+                      <option value="Fapes"></option>
+                      <option value="Facitec"></option>
+                      <option value="Ifes"></option>
+                      <option value="Voluntariado : sem financiamento"></option>
+                    </datalist>
+                  </div>
+                  <div class="divider divider-info">
+                    <div class="divider-text">Seleção de Coordenador</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="Coordenador-projeto" class="form-label">Coordenador do projeto</label>
+                    <input class="form-control" list="lista_agencias" id="Coordenador-projeto" placeholder="Selecione a coordenador ...">
+                    <datalist id="Coordenador-projeto">
+                      <option value="Moiśes savedra"></option>
+                      <option value="Estefano aparecido"></option>
+                      <option value="Jefferson Oliveira"></option>
+                    </datalist>
+                  </div>
+                  <div class="divider divider-info">
+                    <div class="divider-text">Adicionar bolsistas</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="bolsista-1" class="form-label">Bolsista do projeto</label>
+                    <input class="form-control" list="lista_agencias" id="bolsista-1" placeholder="Selecione a coordenador ...">
+                    <datalist id="bolsista-1">
+                      <option value="Moiśes savedra"></option>
+                      <option value="Estefano aparecido"></option>
+                      <option value="Jefferson Oliveira"></option>
+                    </datalist>
+                  </div>
+                  <div class="mb-3">
+                    <label for="bolsista-2" class="form-label">Bolsista do projeto</label>
+                    <input class="form-control" list="lista_agencias" id="bolsista-2" placeholder="Selecione a coordenador ...">
+                    <datalist id="bolsista-2">
+                      <option value="Moiśes savedra"></option>
+                      <option value="Estefano aparecido"></option>
+                      <option value="Jefferson Oliveira"></option>
+                    </datalist>
+                  </div>
+                  <!-- dinamico aqui -->
+                  <div class="d-grid gap-2 col-lg-6 mx-auto">
+                    <button class="btn btn-success btn-lg" type="button">Cadastrar Projeto</button>
+                  </div>
+
+
+                </div>
+              </div>
+            </div> 
+            <!-- / Cadastrar Projeto-->
+
+            <!-- Cadastrar Bolsista-->
+            <div id="cadastrar-bolsista" style="display: none;">
+              <div class="card mb-4">
+                <h5 class="card-header">Cadastrar Bolsista</h5>
+                <div class="card-body">
                   <div class="mb-3 row">
-                    <label for="html5-password-input" class="col-md-2 col-form-label">Password</label>
+                    <label for="html5-text-input" class="col-md-2 col-form-label">Nome completo</label>
                     <div class="col-md-10">
-                      <input class="form-control" type="password" value="password" id="html5-password-input">
+                      <input class="form-control" type="text" value="Marcelo Passamai Mendes" id="html5-text-input">
                     </div>
                   </div>
+                  
                   <div class="mb-3 row">
-                    <label for="html5-number-input" class="col-md-2 col-form-label">Number</label>
+                    <label for="" class="col-md-2 col-form-label">email</label>
                     <div class="col-md-10">
-                      <input class="form-control" type="number" value="18" id="html5-number-input">
+                      <input class="form-control" type="email" value="marcelo@email.com" id="">
                     </div>
                   </div>
+                  
                   <div class="mb-3 row">
-                    <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Datetime</label>
+                    <label for="" class="col-md-2 col-form-label">Campus</label>
                     <div class="col-md-10">
-                      <input class="form-control" type="datetime-local" value="2021-06-18T12:30:00" id="html5-datetime-local-input">
+                      <input class="form-control" type="text" value="Serra" id="">
                     </div>
                   </div>
+
                   <div class="mb-3 row">
-                    <label for="html5-date-input" class="col-md-2 col-form-label">Date</label>
+                    <label for="html5-tel-input" class="col-md-2 col-form-label">Telefone</label>
                     <div class="col-md-10">
-                      <input class="form-control" type="date" value="2021-06-18" id="html5-date-input">
+                      <input class="form-control" type="tel" value="(27)99188-4556" id="html5-tel-input">
                     </div>
                   </div>
-                  <div class="mb-3 row">
-                    <label for="html5-month-input" class="col-md-2 col-form-label">Month</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="month" value="2021-06" id="html5-month-input">
-                    </div>
-                  </div>
-                  <div class="mb-3 row">
-                    <label for="html5-week-input" class="col-md-2 col-form-label">Week</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="week" value="2021-W25" id="html5-week-input">
-                    </div>
-                  </div>
-                  <div class="mb-3 row">
-                    <label for="html5-time-input" class="col-md-2 col-form-label">Time</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="time" value="12:30:00" id="html5-time-input">
-                    </div>
-                  </div>
-                  <div class="mb-3 row">
-                    <label for="html5-color-input" class="col-md-2 col-form-label">Color</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="color" value="#666EE8" id="html5-color-input">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <label for="html5-range" class="col-md-2 col-form-label">Range</label>
-                    <div class="col-md-10">
-                      <input type="range" class="form-range mt-3" id="html5-range">
-                    </div>
+                  <br>
+
+                  <div class="d-grid gap-2 col-lg-6 mx-auto">
+                    <button class="btn btn-success btn-lg" type="button">Cadastrar bolsista</button>
                   </div>
                 </div>
               </div>
 
             </div> 
-            <!-- / Cadastrar Projeto-->
-
-            <!-- Cadastrar Bolsista-->
-            <div id="cadastrar-bolsista">
-
-            </div> 
             <!-- / Cadastrar Bolsista-->
 
             <!-- Cadastrar Coordenador-->
-            <div id="cadastrar-coordenador">
+            <div id="cadastrar-coordenador" style="display: none;">
+              <div class="card mb-4">
+                <h5 class="card-header">Cadastrar Coordenador</h5>
+                <div class="card-body">
+                  <div class="mb-3 row">
+                    <label for="html5-text-input" class="col-md-2 col-form-label">Nome completo</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="text" value="Marcelo Passamai Mendes" id="html5-text-input">
+                    </div>
+                  </div>
+                  
+                  <div class="mb-3 row">
+                    <label for="" class="col-md-2 col-form-label">email</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="email" value="marcelo@email.com" id="">
+                    </div>
+                  </div>
+                  
+                  <div class="mb-3 row">
+                    <label for="" class="col-md-2 col-form-label">Campus</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="text" value="Serra" id="">
+                    </div>
+                  </div>
+
+                  <div class="mb-3 row">
+                    <label for="html5-tel-input" class="col-md-2 col-form-label">Telefone</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="tel" value="(27)99188-4556" id="html5-tel-input">
+                    </div>
+                  </div>
+                  <br>
+
+                  <div class="d-grid gap-2 col-lg-6 mx-auto">
+                    <button class="btn btn-success btn-lg" type="button">Cadastrar coordenador</button>
+                  </div>
+                </div>
+              </div>
 
             </div> 
             <!-- / Cadastrar Coordenador-->
+
+            <!-- Cadastrar administrador-->
+            <div id="cadastrar-administrador" style="display: none;">
+              <div class="card mb-4">
+                <h5 class="card-header">Cadastrar administrador</h5>
+                <div class="card-body">
+                  <div class="mb-3 row">
+                    <label for="html5-text-input" class="col-md-2 col-form-label">Nome completo</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="text" value="Marcelo Passamai Mendes" id="html5-text-input">
+                    </div>
+                  </div>
+                  
+                  <div class="mb-3 row">
+                    <label for="" class="col-md-2 col-form-label">email</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="email" value="marcelo@email.com" id="">
+                    </div>
+                  </div>
+                  
+                  <div class="mb-3 row">
+                    <label for="" class="col-md-2 col-form-label">Campus</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="text" value="Serra" id="">
+                    </div>
+                  </div>
+
+                  <div class="mb-3 row">
+                    <label for="html5-tel-input" class="col-md-2 col-form-label">Telefone</label>
+                    <div class="col-md-10">
+                      <input class="form-control" type="tel" value="(27)99188-4556" id="html5-tel-input">
+                    </div>
+                  </div>
+                  <br>
+
+                  <div class="d-grid gap-2 col-lg-6 mx-auto">
+                    <button class="btn btn-success btn-lg" type="button">Cadastrar administrador</button>
+                  </div>
+                </div>
+              </div>
+
+            </div> 
+            <!-- / Cadastrar administrador-->
 
 
         <!-- / Content -->
@@ -371,5 +492,36 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
+    <script>
+    /*Menu*/
+    $( "#menu-cadastrar-projeto" ).on( "click", function() {
+      $( "#cadastrar-bolsista" ).hide( 600 );
+      $( "#cadastrar-coordenador" ).hide( 600 );
+      $( "#cadastrar-administrador" ).hide( 600 );
+      $( "#cadastrar-projeto" ).show( 300 );
+    });
+    $( "#menu-cadastrar-bolsista" ).on( "click", function() {
+      $( "#cadastrar-projeto" ).hide( 600 );
+      $( "#cadastrar-coordenador" ).hide( 600 );
+      $( "#cadastrar-administrador" ).hide( 600 );
+      $( "#cadastrar-bolsista" ).show( 300 );
+    });
+    $( "#menu-cadastrar-coordenador" ).on( "click", function() {
+      $( "#cadastrar-projeto" ).hide( 600 );
+      $( "#cadastrar-bolsista" ).hide( 600 );
+      $( "#cadastrar-administrador" ).hide( 600 );
+      $( "#cadastrar-coordenador" ).show( 300 );
+    });
+    $( "#menu-cadastrar-administrador" ).on( "click", function() {
+      $( "#cadastrar-projeto" ).hide( 600 );
+      $( "#cadastrar-bolsista" ).hide( 600 );
+      $( "#cadastrar-coordenador" ).hide( 600 );
+      $( "#cadastrar-administrador" ).show( 300 );
+    });
+    
+
+    </script>
+
   </body>
 </html>
