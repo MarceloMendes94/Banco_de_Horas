@@ -30,7 +30,7 @@ Faz-se necessário um controle de projetos e usuários pelo Polo de inovação, 
 ## Modelagem
 
 ### 2.1 Modelo UML  
-
+![modelo uml](./modelos/uml.svg)
 
 ### 2.2 Modelo lógico do banco de dados  
 
